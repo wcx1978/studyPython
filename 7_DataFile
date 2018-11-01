@@ -1,0 +1,21 @@
+操作数据文件
+
+pickle
+
+》＞ import pickle　　##　引入
+
+》＞ integer = [1,2,3,4,5]
+》＞ integers = [1,2,3,4,5]
+》＞ f = open('c:/aaa.dat','wb')　##　指定文件存储地用反斜
+
+》＞ pickle.dump(integers,f)　　##dump 还可加入参数，protocol
+》＞ f.close()
+
+读取文件
+
+》＞ integers = pickle.load(open("c:/aaa.dat","rb"))
+》＞ integers　##　或 print(integers)
+-------------------
+字典对象
+
+import shelve
